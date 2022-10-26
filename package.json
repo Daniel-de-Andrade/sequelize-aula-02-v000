@@ -1,0 +1,20 @@
+{
+  "name": "users-full-stack",
+  "version": "1.0.0",
+  "description": "![Screenshot](https://raw.githubusercontent.com/Marcelo-Diament/sequelize-aula-01/main/backend/public/images/sequelize-aula-01.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix frontend",
+    "server": "npm start --prefix backend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client-install": "npm install --prefix frontend",
+    "server-install": "npm install --prefix backend",
+    "install" : "concurrently \"npm run server-install\" \"npm run client-install\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
